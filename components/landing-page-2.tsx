@@ -1,8 +1,7 @@
 'use client'
 
-import React, { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Github, Shield, Container, FileText } from 'lucide-react';
+import { ArrowRight} from 'lucide-react';
 import FeatureGrid from './feature-grid';
 
 const LandingPage = () => {

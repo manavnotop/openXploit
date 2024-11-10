@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Github, Shield, Container, FileText } from 'lucide-react';
 import FeatureGrid from './feature-grid';
+import Link from 'next/link';
 
 const LandingPage = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -91,14 +92,14 @@ const LandingPage = () => {
       <section className="py-20 px-4 text-center">
         <div className="max-w-2xl mx-auto opacity-0 translate-y-4 animate-fade-in">
           <h2 className="text-4xl font-bold mb-8">Ready to secure your application?</h2>
-          <Button 
-            size="lg" 
-            className="bg-white text-black hover:bg-zinc-200 transition-colors"
-            onClick={() => window.location.href = '/try-now'}
-          >
-            Try Now
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+            <Button 
+                size="lg" 
+                className="bg-white text-black hover:bg-zinc-200 transition-colors"
+                onClick={() => window.location.href = '/trynow'}
+            >
+                Try Now
+                <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
         </div>
       </section>
 

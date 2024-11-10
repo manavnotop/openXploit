@@ -4,42 +4,9 @@ import React, { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Github, Shield, Container, FileText } from 'lucide-react';
 import FeatureGrid from './feature-grid';
-import Link from 'next/link';
 
 const LandingPage = () => {
-  const [scrollY, setScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const steps = [
-    {
-      title: "Repository Analysis",
-      icon: <Github className="h-8 w-8" />,
-      description: "Enter your GitHub repository URL to begin the security assessment process"
-    },
-    {
-      title: "Containerized Rebuild",
-      icon: <Container className="h-8 w-8" />,
-      description: "We safely rebuild your application in an isolated Docker container"
-    },
-    {
-      title: "Security Assessment",
-      icon: <Shield className="h-8 w-8" />,
-      description: "Comprehensive scan using OpenVAS and Metasploit following OWASP Top 10"
-    },
-    {
-      title: "Interactive Report",
-      icon: <FileText className="h-8 w-8" />,
-      description: "Detailed vulnerability report with interactive visualizations and metrics"
-    }
-  ];
-
+     
   const features = [
     { title: 'Submit Repository', description: 'Enter your GitHub repository URL for scanning.', icon: '🗂️' },
     { title: 'Safe Environment Setup', description: 'Rebuilds your application in a secure container.', icon: '🛡️' },

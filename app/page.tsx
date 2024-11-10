@@ -1,5 +1,4 @@
 import LandingPage from "@/components/landing-page-2";
-import Head from "next/head";
 
 export const metadata = {
   title: 'openXploit',
